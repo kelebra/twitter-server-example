@@ -9,8 +9,6 @@ object Runner extends TwitterServer {
 
   private val counter = statsReceiver.counter("requests_counter")
 
-  override def failfastOnFlagsNotParsed: Boolean = true
-
   def main() {
     val service = HelloService(counter, logger)
     HttpMuxer.addHandler("/echo", service)

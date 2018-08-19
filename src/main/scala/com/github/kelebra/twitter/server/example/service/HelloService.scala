@@ -13,7 +13,7 @@ class HelloService(requestCounter: Counter, logger: Logger)
     logger.info("Received a request at " + Time.now)
     requestCounter.incr()
     val response = Response(request.version, Status.Ok)
-    response.contentString = "hello" + "\n"
+    response.contentString = s"Hello at ${Time.now.format("yyyy-MM-DD hh:mm:ss.sss")}"
     Future.value(response)
   }
 }
