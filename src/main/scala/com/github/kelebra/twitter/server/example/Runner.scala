@@ -1,6 +1,6 @@
-package com.github.kelebra.finagle.example
+package com.github.kelebra.twitter.server.example
 
-import com.github.kelebra.finagle.example.service.HelloService
+import com.github.kelebra.twitter.server.example.service.HelloService
 import com.twitter.finagle.http.HttpMuxer
 import com.twitter.server.TwitterServer
 import com.twitter.util.Await

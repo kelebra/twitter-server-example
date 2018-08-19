@@ -1,4 +1,4 @@
-package com.github.kelebra.finagle.example.service
+package com.github.kelebra.twitter.server.example.service
 
 import com.twitter.finagle.Service
 import com.twitter.finagle.http.{Request, Response, Status}
